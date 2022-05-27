@@ -40,11 +40,11 @@
 
 摁组合键 <kbd>Win</kbd>+<kbd>R</kbd> 进入运行，输入 mstsc 打开远程桌面连接。
 
-![1](../_media/imgs/mcjava/1.png)
+![1](../../_media/imgs/mcjava/1.png)
 
 然后在图片填入对应的信息，点击连接，输入密码即可。
 
-![2](../_media/imgs/mcjava/2.png)
+![2](../../_media/imgs/mcjava/2.png)
 
 进去后安装好Java，配置环境变量之后就可以进行下一步操作。
 
