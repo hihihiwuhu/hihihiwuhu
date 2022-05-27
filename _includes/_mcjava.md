@@ -40,11 +40,11 @@
 
 摁组合键 <kbd>Win</kbd>+<kbd>R</kbd> 进入运行，输入 mstsc 打开远程桌面连接。
 
-![](\_media\imgs\mcjava\1.png)
+![](./_media/imgs/mcjava/1.png)
 
 然后在图片填入对应的信息，点击连接，输入密码即可。
 
-![](\_media\imgs\mcjava\2.png)
+![](./_media/imgs/mcjava/2.png)
 
 进去后安装好Java，配置环境变量之后就可以进行下一步操作。
 
@@ -79,7 +79,7 @@
 
 接着我们在与核心文件同级目录下创建一个 start.bat 文件作为启动脚本。
 
-![3](\_media\imgs\mcjava\3.png)
+![3](./_media/imgs/mcjava/3.png)
 
 我们右键-编辑这个文件，在里面填入下面的代码，并更改对应信息：
 
@@ -90,7 +90,7 @@ java -Xms最小内存 -Xmx最大内存 -jar 核心文件名.jar
 
 内存的格式为 1G/1024M 可根据自己的云服进行分配，比如8G的云服，你可以分配7G给服务端，-Xms 可有可无，核心文件名为你下载的核心的名字，粘贴的时候检查一下是否正确。
 
-![4](\_media\imgs\mcjava\4.png)
+![4](./_media/imgs/mcjava/4.png)
 
 接着保存退出即可。
 
@@ -98,13 +98,13 @@ java -Xms最小内存 -Xmx最大内存 -jar 核心文件名.jar
 
 运行启动脚本，正常情况下会自动下载所需的库文件，反之为环境变量没有配置好，请回去配置好变量再运行。
 
-![5](\_media\imgs\mcjava\5.png)
+![5](./_media/imgs/mcjava/5.png)
 
 库文件下载完之后，有的核心会提示要你同意EULA才能开启服务器，只要把服务端目录下的 eula.txt 文件里的 eula=false 改成 eula=true 保存退出，再次开服即可。
 
 当出现这一行的时候就说明服务器已经开启成功。
 
-![6](\_media\imgs\mcjava\6.png)
+![6](./_media/imgs/mcjava/6.png)
 
 当然，先不要急着进服务器，请看下一步。
 
@@ -114,7 +114,7 @@ java -Xms最小内存 -Xmx最大内存 -jar 核心文件名.jar
 
 右键服务端目录下 server.properties 文件，以notepad++打开。
 
-![7](\_media\imgs\mcjava\7.png)
+![7](./_media/imgs/mcjava/7.png)
 
 改完图片里的配置项后，再次开服，进入我的世界，添加服务器 IP:端口 即可。
 
@@ -126,7 +126,7 @@ java -Xms最小内存 -Xmx最大内存 -jar 核心文件名.jar
 
 有些模组是只用安装在客户端而服务端不需要安装的，请不要混淆，不然会报错，在 [MC百科](//www.mcmod.cn ':target=_blank,:crossorign') 里可以看到该模组的类型，如果该模组只是辅助模组，没有任何附加标签，则为客户端模组，服务端不需要添加，反之两者都要加。
 
-![9](\_media\imgs\mcjava\9.png)
+![9](./_media/imgs/mcjava/9.png)
 
 ##### 注意事项
 
@@ -134,17 +134,17 @@ java -Xms最小内存 -Xmx最大内存 -jar 核心文件名.jar
   - 如果是腾讯云、阿里云这种大厂，请前往官网-云服务器的防火墙内开放端口，协议选择TCP。
   - 如果是普通服务商，请关闭服务器防火墙，并检查服务端端口是否正确。
 
-![8](\_media\imgs\mcjava\8.png)
+![8](./_media/imgs/mcjava/8.png)
 
 #### 内网穿透
 
 如果你是家机开服，可以使用内网穿透让别的玩家进入你的服务器，这里推荐使用 [Sakura Frp](//www.natfrp.cn ':target=_blank,:crossorign') 进行内网穿透，国内节点需要实名认证，因为这是政策要求的，并不是防沉迷。
 
-![10](\_media\imgs\mcjava\10.png)
+![10](./_media/imgs/mcjava/10.png)
 
 创建完之后，启动对应的隧道，并进入日志，找到穿透后的地址以及端口。
 
-![11](\_media\imgs\mcjava\11.png)
+![11](./_media/imgs/mcjava/11.png)
 
 复制发给你的小伙伴就可以啦！
 
