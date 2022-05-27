@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="UTF-8">
+  <title>Mccmd Documentation</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="一个关于游戏服务器的私人文档站。">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="//unpkg.com/docsify@4.12.2/lib/themes/vue.css">
+  <link rel="stylesheet" href="//_mdeia/css/involutions.css">
+  <link rel="icon" href="https://q1.qlogo.cn/g?b=qq&nk=2642319042&s=100">
+</head>
+<body>
+  <div id="app"></div>
+  <script>
+    window.$docsify = {
+      repo: 'https://github.com/hihihiwuhu/hihihiwuhu.github.io.git',
+      loadNavbar: '_navbar.md',
+      loadSidebar: '_sidebar.md',
+      subMaxLevel: 5,
+      search: {
+        maxAge: 86400000,
+        paths: 'auto',
+        placeholder: '搜索',
+        noData: '找不到结果',
+        depth: 6,
+        hideOtherSidebarContent: false
+      },
+      count:{
+        countable:true,
+        fontsize:'0.9em',
+        color:'rgb(90,90,90)',
+        language:'chinese'
+      },
+      plugins: [
+        function(hook) {
+          var footer = [
+            '<hr/>',
+            '<footer>',
+            '<img src="_media/imgs/involutions.png"/><br><br>',
+            '<span>转载请注明原站及地址，如有侵权请联系我删除</span><br>',
+            '<span>Copyright &copy; 2022 <a href="//www.involutions.cn/" target="_blank">involutions</a> | Powered by mccmd | Webapp by docsify</span>',
+            '</footer>'
+          ].join('');
+          hook.afterEach(function(html) {
+          return html + footer;
+          });
+        }
+      ]
+    }
+  </script>
+  <!-- Docsify v4 -->
+  <script src="//unpkg.com/docsify@4.12.2/lib/docsify.min.js"></script>
+  <script src="//unpkg.com/docsify-count/dist/countable.js"></script>
+  <script src="//unpkg.com/docsify@4.12.2/lib/plugins/emoji.min.js"></script>
+  <script src="//unpkg.com/docsify@4.12.2/lib/plugins/search.min.js"></script>
+  <script src="//unpkg.com/docsify@4.12.2/lib/plugins/zoom-image.min.js"></script>
+  <script src="//polyfill.io/v3/polyfill.min.js?features=String.prototype.normalize"></script>
+  <!-- <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script> -->
+</body>
+</html>
