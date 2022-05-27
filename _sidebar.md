@@ -2,10 +2,10 @@
 
 * [开始](/)
 * 我的世界
-    * [服务器列表](/_includes/_mcservers.md)
+    * [服务器列表](_mcservers.md)
     * 开服教程
-        * [Java版](/_includes/_mcjava.md)
-        * [基岩版](/_includes/_mcbedrock.md)
+        * [Java版](_mcjava.md)
+        * [基岩版](_mcbedrock.md)
     * [配置详解](/)
     * [优化教程](/)
     * [基础插件下载](/)
